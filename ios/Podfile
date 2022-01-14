@@ -12,6 +12,14 @@ target 'QrCode' do
     :hermes_enabled => false
   )
 
+  pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+
+  pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+
+  pod 'RNQrGenerator', :path => '../node_modules/rn-qr-generator'
+
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
   target 'QrCodeTests' do
     inherit! :complete
     # Pods for testing
